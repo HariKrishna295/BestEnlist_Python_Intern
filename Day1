@@ -1,2 +1,4 @@
 s="Python Internship"
-print(s[7:]
+print(s[7:])
+
+#output-->Intership
