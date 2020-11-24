@@ -1,0 +1,40 @@
+
+Ex1:
+Create three variables (a,b,c) to same value of any integer & do the following
+a)	Divide a by 10
+b)	Multiply b by 50
+c)	Add c value by 60
+
+ANS:
+
+a=b=c=1
+print(a/10)           #0.1
+print(b*50)           #50
+print(c+60)           #61
+
+Ex2:
+Create a String variable of 5 characters  and replace the 3rd character with G
+
+ANs:
+
+a=list(input())       #Pytho
+a[2]='G'
+print(''.join(a))     #PyGho
+
+
+Ex3:
+Create two values (a,b) of int,float data type & convert the vise versa, Hint : convert a from int to float datatype & b from float to int datatype 
+
+Ans:
+
+a,b=5,0.5
+if isinstance(a, int):
+    a=float(a)
+    b=int(b)
+else:
+    a=int(a)
+    b=float(a)
+print(type(a))       #<class 'float'>
+print(type(b))       #<class 'int'>
+
+
