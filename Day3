@@ -1,0 +1,40 @@
+1)	Write a Python script to merge two Python dictionaries
+     
+     n1 = {'a': 1, 'b': 2}
+     n2 = {'c': 3, 'd': 4}
+     n1.update(n2)
+     print(n1)    #{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+     
+     
+2)	Write a Python program to remove a key from a dictionary
+     
+     n= {'a':1,'b':2,'c':3,'d':4}
+     print(n) # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+     k=input('Enter the key u want to delete:')  #Enter the key u want to delete:b
+     if k in n: 
+         del n[k]
+     else:
+         print('not found')
+     print('Updated dict')
+     print(n)             #{'a': 1, 'c': 3, 'd': 4}
+
+
+3)	Write a Python program to map two lists into a dictionary
+
+    n1 = ['a', 'b', 'c']
+    n2 = [1,2,3]
+    k = dict(zip(n1,n2))
+    print(k)       #{'a': 1, 'b': 2, 'c': 3}
+
+    
+4)	Write a Python program to find the length of a set
+    
+    n=set(input().split()) # 5 4 3
+    print(len(n))          # length-->3
+
+5)	Write a Python program to remove the intersection of a 2nd set from the 1st set
+
+    n1 = {1,2,3,4,5}
+    n2 = {1,2,6,7,8}
+    print("Remove the intersection of a 2nd set from the 1st set")
+    print(n1-n2)    #{3, 4, 5}
