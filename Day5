@@ -1,0 +1,32 @@
+1)Create a function getting two integer inputs from user. & print the following:
+Addition of two numbers is +value
+Subtraction of two numbers is +value
+Division of two numbers is +value
+Multiplication of two numbers is +value
+
+   code:
+   def add(a,b):
+    return a+b
+   def sub(a,b):
+       return abs(a-b)
+   def mul(a,b):
+       return abs(a*b)
+   def div(a,b):
+      return abs(a/b)
+
+    a=int(input())  # 1
+    b=int(input())  # 2
+    print(add(a,b)) # 3
+    print(sub(a,b)) # 1
+    print(mul(a,b)) # 2
+    print(div(a,b)) #0.5
+      
+
+
+2. Create a function covid( ) & it should accept patient name, and body temperature, by default the body temperature should be 98 degree
+  
+   def covid(patientname,bodytemp=98):
+    print('{0} body temperature is {1}'.format(patientname,bodytemp))
+   covid('Jack')  
+   
+   # Jack body temperature is 98
