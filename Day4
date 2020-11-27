@@ -1,0 +1,32 @@
+1.	Write a program to create a list of n integer values and do the following
+   
+   n=list(map(int,input().split()))   #[1,2,3,4,5]
+
+•	Add an item in to the list (using function)
+
+    n.append(6) #[1,2,3,4,5,6]
+    
+•	Delete (using function)
+
+    n.remove(1)  #[2,3,4,5,6]
+    
+•	Store the largest number from the list to a variable
+
+    la=max(n) # 6
+
+•	Store the Smallest number from the list to a variable
+
+    la=min(n) # 2
+    
+2) Create a tuple and print the reverse of the created tuple
+    
+    tuple=('P','Y','T','H','O','N')
+    print('reversed tuple')
+    print(tuple[::-1]) #('N','O','H','T','Y','P')
+
+3) Create a tuple and convert tuple into list
+     
+     tuple=('P','Y','H','O','N')
+     li=list(tuple)
+     print(type(li)) #<class 'list'>
+ 
