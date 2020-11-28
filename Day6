@@ -1,0 +1,124 @@
+•	Write a program to loop through a list of numbers and add +2 to every value to elements in list
+
+code:
+
+inp=list(map(int,input().split()))   # [1,2,3]
+for i in range(len(inp)):
+    inp[i]=inp[i]+2
+print(inp)                           #[3,4,5]
+
+•	Write a program to get the below pattern
+54321
+4321
+321
+21
+1
+
+rows = 5
+for i in range(0, rows + 1):
+    for j in range(rows - i, 0, -1):
+        print(j, end=' ')
+    print()
+    
+    
+
+•	Python Program to Print the Fibonacci sequence
+
+def recur(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur(n-1) + recur(n-2))
+
+inp=int(input())
+if inp <= 0:
+   print("enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(inp):
+       print(recur(i))
+
+•	Explain Armstrong number and write a code with a function
+
+def ams(n):
+    sum = 0
+    temp = n
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** 3
+        temp //= 10
+    if n == sum:
+        print(n,"is an Armstrong number")
+    else:
+        print(n,"is not an Armstrong number")
+n=int(input())
+ams(n)
+
+
+•	Write a program to print the multiplication table of 9
+
+def mul(n):
+    for i in range(1,12):
+        print('{0}X{1}={2}'.format(n,i,n*i))
+n=int(input())
+mul(n)
+
+•	Check if a program is negative or positive
+
+def checknum(n):
+    if n<0:
+        print('{0} negative number'.format(n))
+    else:
+        print('{0} positive number'.format(n))
+        
+n=int(input())
+checknum(n)
+
+•	Write a program to convert the number of days to ages
+
+inp=int(input("Number of days"))  #365
+y=inp//365
+d=inp%365
+print('Age is {0} years and {1} days'.format(y,d))  # Age is 1 years and 0 days
+
+
+•	Solve Trigonometry problem using math function write a program to solve us-ing math function
+
+import math 
+inp = math.pi
+print ("sine") 
+print (math.sin(inp))   # 1.2246467991473532e-16
+print ("cos") 
+print (math.cos(inp)) # -1
+
+
+•	Create a calculator only on a code level by using if condition (Basic arithmetic calculation)
+
+def add(num1, num2): 
+    return num1 + num2 
+def sub(num1, num2): 
+    return num1 - num2 
+def mul(num1, num2): 
+    return num1 * num2 
+def div(num1, num2): 
+    return num1 / num2 
+print("Please select operation -\n" 
+        "1. Add\n" 
+        "2. Subtract\n" 
+        "3. Multiply\n" 
+        "4. Divide\n") 
+inp = int(input("Select operations form 1, 2, 3, 4 :")) 
+n1 = int(input("Enter number: ")) 
+n2 = int(input("Enter number: ")) 
+if inp== 1: 
+    print('{0} + {1}= {2}'.format(n1,n2,add(n1, n2))) 
+elif inp== 2:
+    print('{0} + {1}= {2}'.format(n1,n2,sub(n1, n2))) 
+
+elif inp== 3:
+    print('{0} + {1}= {2}'.format(n1,n2,mul(n1, n2))) 
+
+elif inp== 4:
+    print('{0} + {1}= {2}'.format(n1,n2,div(n1, n2))) 
+else: 
+    print("Invalid input")
