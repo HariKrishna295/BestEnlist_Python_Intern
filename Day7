@@ -1,0 +1,26 @@
+1.	Create a python module with list and import the module in another .py file and change the value in list
+
+import mymodule
+li=[i+1 for i in mymodule.li]
+print(li) 
+
+2.	Install pandas package (try to import the package in a python file)
+
+import pandas as pd
+inp=[1,2,3,4]
+i=pd.series(inp)
+print(i)
+3.	Import a module that picks random number and write a program to fetch a random number from 1 to  100 on every run
+
+import random
+print(random.randint(1,101))
+
+4.	Import sys package and find the python path
+
+import sys
+print(sys.path)
+
+5.	Try to install a package and uninstall a package using pip
+
+pip  install pandas
+pip uninstall pandas
