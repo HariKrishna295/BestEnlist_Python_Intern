@@ -1,0 +1,79 @@
+•	List down all the error types and check all the errors using a py-thon program for all errors
+
+ Errors:
+   
+ 1) Attribute Error
+ 2) Arithmetic Error
+      i) ZeroDivision Error
+      ii) FloatingPoint Error
+      iii) Overflow Error
+ 3) EOF Error
+ 4) Name Error
+ 5) Lookup Error
+      i) Index Error
+      ii) Key Error
+ 6) OS Error
+ 7) Type Error
+      i) FileNotFound Error
+      ii) Interrupted Error
+      iii) Permission Error
+      iv) TimeOut Error
+ 8) Value Error
+ 
+ Code:
+ 1) Attribute Error
+ 2) Arithmetic Error
+      i) ZeroDivision Error
+      ii) FloatingPoint Error
+      iii) Overflow Error
+ 3) EOF Error
+       
+      def m1():
+          SyntaxError: unexpected EOF while parsing
+          
+ 4) Name Error
+       
+       s="Python"
+       del s
+       print(s)   # NameError: name 's' is not defined
+
+         
+ 5) Lookup Error
+      i) Index Error
+      ii) Key Error
+ 6) OS Error
+ 7) Type Error
+      i) FileNotFound Error
+      ii) Interrupted Error
+      iii) Permission Error
+      iv) TimeOut Error
+ 8) Value Error
+        
+        li=[1,2,3]
+        a,b,c,d=li
+        print(a,b,c,d)   #ValueError: not enough values to unpack (expected 4, got 3)
+
+•	Design a simple calculator app with try and except for all use cases
+
+•	print one message if the try block raises a NameError and another for other errors
+
+try:
+  print("try")
+  print(10/0)
+except NameError:
+  print("except")
+finally:
+  print("finally") 
+
+•	When try-except scenario is not required?
+
+•	Try getting an input inside the try catch block
+
+while True:
+    try:
+        n = input("Please enter an integer: ")
+        n = int(n)
+        break
+    except ValueError:
+        print("No valid integer! Please try again")
+print("Great,successfully entered an integer!")
